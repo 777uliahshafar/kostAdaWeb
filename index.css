@@ -51,9 +51,10 @@ footer{
     clear: both;
     width: 1000px;
     background-color: #007f24;
-    margin-left: 40px;
+    margin: 0 auto 20px;
     font-size: small;
 }
+
 
 .address{
     text-emphasis: none;
@@ -62,6 +63,36 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+nav>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li{
+    float: left;
+}
+
+nav>ul>li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px; 
+    text-decoration: none; 
+    font-weight:bold;
+}
+
+nav>ul>li span{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px; 
+    text-decoration: none; 
+    font-weight:bold;
+
+}
+
 
 header,
 section,
@@ -73,3 +104,4 @@ article,
 figure{
     display: block;
 }
+
