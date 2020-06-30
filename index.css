@@ -47,6 +47,34 @@ nav>ul>li span{
     flex-direction: row;
 }
 
+.pieGallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    align-content: flex-start;
+}
+
+.pieCard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #cec9c3;
+    box-shadow: 0 2px 4px rgb(0, 0, .3);
+    margin: 0.2rem;
+    padding: .5rem;
+    
+    
+}
+.cardRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
 .box {
     width: 200px;
     height: 100px;
