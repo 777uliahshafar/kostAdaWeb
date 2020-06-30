@@ -6,80 +6,19 @@ body
     margin-left: auto;
     margin-right: auto;
     //background-color: #e6e4d9;
+    
 }
 
-#mainheader{
-}
 
 nav {
     background-color: #007f24;
     height: 60px;
-    width: 1000px;
     margin: 0 auto 20px;
-}
-
-#leftmenu{
-    float: left; 
-    width: 25%;
-    margin-bottom: 20px;
-    padding: 0 auto 100px; 
-    border: solid 1px;
-    border-radius: 20px;
-}
-
-aside> img {
-    width: 80%;
-    margin: 20px;
-}
-
-.searchbox{
-    padding: 5px; 
-    margin: 10px 10px;
-    width: 200px;
-    border: solid .5px #007f24;
-}
-
-#main{
-    float: right;
-    width: 70%;
-    margin-bottom: 20px;
-}
-
-h1,h2, h3{
-    font-family: "double-pica-sc", Garamond, "Baskerville Old Face", "Times New Roman", serif;
-    font-size: 40px;
-}
-
-img{
-    align: center;
-    width: 100%;
-}
-
-footer{
-    clear: both;
-    width: 1000px;
-    background-color: #007f24;
-    margin: 0 auto 20px;
-    font-size: small;
-}
-
-
-.contact{
-    text-emphasis: none;
-    margin: 10px 0;
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-nav>ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav>ul>li{
     float: left;
+    
 }
 
 nav>ul>li a{
@@ -100,6 +39,92 @@ nav>ul>li span{
     font-weight:bold;
 
 }
+
+.mainContent{ 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #007f24;
+    margin: 5px 10px;
+}
+
+#leftmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#cec9c3;
+    margin: 20px 10px;
+    padding: 0 auto 100px; 
+    border-right: solid 3px;
+    border-color: #ada9a5;
+}
+
+
+aside> img {
+    width: 80%;
+    margin: 20px;
+}
+
+.searchbox{
+    padding: 5px; 
+    margin: 10px 10px;
+    width: 200px;
+    border: solid .5px #007f24;
+}
+
+
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.pieRow{
+    display: flex;
+    flex: row;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h1,h2, h3{
+    font-family: "double-pica-sc", Garamond, "Baskerville Old Face", "Times New Roman", serif;
+    font-size: 40px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #007f24;
+    margin: 0 auto;
+    font-size: small;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-emphasis: none;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+nav>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 
 header,
