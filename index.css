@@ -52,7 +52,7 @@ nav>ul>li span{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 60%;
+    width: 70%;
     align-content: flex-start;
 }
 
@@ -109,19 +109,28 @@ aside> img {
 }
 
 
-#main{
+.main{
     display: flex;
     flex-direction: column;
     flex-basis: 70%;
-    margin-bottom: 20px;
 }
 
-.depan{
+.depan {
+    display: flex;
+    flex-direction: column;
+}
+
+.depan img{
     align-self: center;
-    
 }
 
 
+#mainPie{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    margin-bottom: 10px;
+}
 
 .pieRow{
     display: flex;
