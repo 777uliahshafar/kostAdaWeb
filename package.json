@@ -1,0 +1,20 @@
+{
+  "name": "kostadaweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --w scss/styles.scss scss/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/777uliahshafar/kostAdaWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/777uliahshafar/kostAdaWeb/issues"
+  },
+  "homepage": "https://github.com/777uliahshafar/kostAdaWeb#readme"
+}
