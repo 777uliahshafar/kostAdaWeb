@@ -1,14 +1,27 @@
-.container {
+body {
+  max-width: 1020px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 8rem auto auto 6rem;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto 6rem;
   grid-template-areas:
-    'header header'
     'links links'
-    'article sidebar'
+    'sidebar article'
     'footer footer';
-
+  justify-content: center;
   margin: 0 auto;
   padding: 10px;
   border: solid 1px #ccc;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(12, 9rem);
+  height: auto;
+  background-color: $primaryColor;
+
+  li {
+    display: inline;
+    color: $fontColor;
+    background-color: transparent;
+  }
 }

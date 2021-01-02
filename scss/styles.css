@@ -250,11 +250,22 @@ figure {
     border: solid 1px #ccc; } }
 
 @media only screen and (min-width: 64em) {
-  .container {
+  body {
+    max-width: 1020px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 8rem auto auto 6rem;
-    grid-template-areas: 'header header' 'links links' 'article sidebar' 'footer footer';
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto 6rem;
+    grid-template-areas: 'links links' 'sidebar article' 'footer footer';
+    justify-content: center;
     margin: 0 auto;
     padding: 10px;
-    border: solid 1px #ccc; } }
+    border: solid 1px #ccc; }
+  nav {
+    display: grid;
+    grid-template-columns: repeat(12, 9rem);
+    height: auto;
+    background-color: #ac3b61; }
+    nav li {
+      display: inline;
+      color: #302a2c;
+      background-color: transparent; } }
