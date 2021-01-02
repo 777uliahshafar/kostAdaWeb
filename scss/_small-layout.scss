@@ -9,7 +9,7 @@ body {
     'article article'
     'footer footer'
     'links links';
-  font-size: 17px;
+  font-size: 19px;
   margin-top: 0px;
   font-family: $defaultFont;
   margin: 0 auto;
@@ -27,15 +27,15 @@ aside {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 0 auto 100px;
+  padding: 0 auto;
   border-bottom: solid 3px;
   border-color: $primaryColor;
 
   img {
-    margin: 40px;
+    margin: 10px;
   }
 
-  b {
+  p {
     padding: 10px;
   }
 
@@ -43,9 +43,76 @@ aside {
     display: block;
     color: deeppink;
     text-align: center;
-    padding: 16px;
     text-decoration: none;
     font-weight: $boldWeight;
+  }
+}
+
+.downArrow {
+}
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
 
@@ -142,8 +209,7 @@ main {
 h1,
 h2,
 h3 {
-  font-family: 'double-pica-sc', Garamond, 'Baskerville Old Face',
-    'Times New Roman', serif;
+  font-family: $defaultFont;
   font-size: 40px;
 }
 

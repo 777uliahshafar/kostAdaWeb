@@ -1,7 +1,6 @@
 {
   "name": "kostadaweb",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/777uliahshafar/kostAdaWeb/issues"
   },
-  "homepage": "https://github.com/777uliahshafar/kostAdaWeb#readme"
+  "homepage": "https://github.com/777uliahshafar/kostAdaWeb#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {},
+  "description": ""
 }
