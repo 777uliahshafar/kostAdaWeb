@@ -26,3 +26,6 @@
 *.fdb_latexmk
 *.swp
 *.swo
+
+# Dependency directories
+node_modules/
