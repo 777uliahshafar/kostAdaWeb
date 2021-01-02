@@ -1,19 +1,228 @@
 @import './variable';
 
-.container {
+body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 8rem auto auto 3rem auto;
+  grid-template-rows: auto auto 12rem auto;
   grid-template-areas:
-    'header header'
-    'article article'
     'sidebar sidebar'
+    'article article'
     'footer footer'
     'links links';
-  margin: 0;
+  font-size: 17px;
+  margin-top: 0px;
+  font-family: $defaultFont;
+  margin: 0 auto;
+  background-color: #e6e4d9;
+}
 
-  .content {
-    grid-area: article;
-    margin: 0.5rem $gutter;
+aside {
+  grid-area: sidebar;
+  width: $container-width;
+  background-color: $secondaryColor;
+}
+
+#leftMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 auto 100px;
+  border-bottom: solid 3px;
+  border-color: $primaryColor;
+
+  img {
+    margin: 40px;
   }
+
+  b {
+    padding: 10px;
+  }
+
+  a {
+    display: block;
+    color: deeppink;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: $boldWeight;
+  }
+}
+
+main {
+  grid-area: article;
+  padding: 0.5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+}
+
+.depan {
+  display: flex;
+  flex-direction: column;
+}
+
+.depan img {
+  align-self: center;
+  background-color: #cec9c3;
+  box-shadow: 0 4px 5px rgb(0, 0, 0.3);
+}
+
+.pieGallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  align-content: flex-start;
+}
+
+.pieCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #cec9c3;
+  box-shadow: 0 2px 4px rgb(0, 0, 0.3);
+  margin: 0.2rem;
+  padding: 0.5rem;
+}
+
+.pieCard img {
+  align-self: center;
+}
+
+.cardRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #007f24;
+  margin: 5px 10px;
+}
+
+#mainPie {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+  margin-bottom: 10px;
+}
+
+.pieRow {
+  display: flex;
+  flex: row;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 0.3rem;
+  background-color: #cec9c3;
+  box-shadow: 0 2px 4px rgb(0, 0, 0.3);
+}
+
+.pieRow > div {
+  flex-grow: 2;
+  padding-left: 0.5rem;
+}
+
+.pieRow > small {
+  flex-shrink: 3;
+}
+
+.pieRow h5,
+.pieRow p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'double-pica-sc', Garamond, 'Baskerville Old Face',
+    'Times New Roman', serif;
+  font-size: 40px;
+}
+
+footer {
+  grid-area: footer;
+  width: $container-width;
+  background-color: $secondaryColor;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-emphasis: none;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+#mainHeader {
+  grid-area: links;
+}
+
+nav {
+  width: $container-width;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 10px;
+  background-color: $primaryColor;
+
+  li {
+    color: $primaryColor;
+    font-family: $defaultFont;
+    font-size: 17px;
+    font-weight: $boldWeight;
+    display: block;
+    text-align: center;
+    margin: 0.5rem $gutter;
+    padding: 0.5rem;
+    background-color: $secondaryColor;
+    border-radius: 0.5rem;
+    color: $primaryColor;
+  }
+
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: $boldWeight;
+  }
+
+  span {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: $boldWeight;
+  }
+}
+
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
 }
