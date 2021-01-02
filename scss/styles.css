@@ -251,21 +251,29 @@ figure {
 
 @media only screen and (min-width: 64em) {
   body {
-    max-width: 1020px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto auto 6rem;
-    grid-template-areas: 'links links' 'sidebar article' 'footer footer';
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: auto auto max-content;
+    grid-template-areas: '. links links .' '. sidebar article .' '. footer footer .';
     justify-content: center;
     margin: 0 auto;
-    padding: 10px;
-    border: solid 1px #ccc; }
+    padding: 2px;
+    background-color: transparent; }
   nav {
     display: grid;
     grid-template-columns: repeat(12, 9rem);
     height: auto;
-    background-color: #ac3b61; }
+    background-color: #ac3b61;
+    border-bottom: 4px solid #ecc7d3; }
     nav li {
       display: inline;
       color: #302a2c;
-      background-color: transparent; } }
+      background-color: transparent; }
+  main {
+    background-color: #e6e4d9;
+    border-right: 1px solid #746e4c;
+    border-bottom: 3px solid #746e4c; }
+  footer {
+    background-color: #ac3b61;
+    margin-top: 0;
+    color: #fff; } }

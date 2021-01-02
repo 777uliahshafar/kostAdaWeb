@@ -1,16 +1,17 @@
+@import './variable';
+
 body {
-  max-width: 1020px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto auto 6rem;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-rows: auto auto max-content;
   grid-template-areas:
-    'links links'
-    'sidebar article'
-    'footer footer';
+    '. links links .'
+    '. sidebar article .'
+    '. footer footer .';
   justify-content: center;
   margin: 0 auto;
-  padding: 10px;
-  border: solid 1px #ccc;
+  padding: 2px;
+  background-color: transparent;
 }
 
 nav {
@@ -18,10 +19,23 @@ nav {
   grid-template-columns: repeat(12, 9rem);
   height: auto;
   background-color: $primaryColor;
+  border-bottom: 4px solid lighten($primaryColor, 40%);
 
   li {
     display: inline;
     color: $fontColor;
     background-color: transparent;
   }
+}
+
+main {
+  background-color: #e6e4d9;
+  border-right: 1px solid darken(#e6e4d9, 50%);
+  border-bottom: 3px solid darken(#e6e4d9, 50%);
+}
+
+footer {
+  background-color: $primaryColor;
+  margin-top: 0;
+  color: #fff;
 }
