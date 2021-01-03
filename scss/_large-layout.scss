@@ -3,9 +3,9 @@
 body {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr;
-  grid-template-rows: auto auto max-content;
+  grid-template-rows: max-content auto max-content;
   grid-template-areas:
-    '. links links .'
+    'links links links links'
     '. sidebar article .'
     '. footer footer .';
   justify-content: center;
@@ -15,16 +15,32 @@ body {
 }
 
 nav {
-  display: grid;
-  grid-template-columns: repeat(12, 9rem);
   height: auto;
   background-color: $primaryColor;
   border-bottom: 4px solid lighten($primaryColor, 40%);
-
+  ul {
+    display: grid;
+    grid-template-columns: repeat(12, 9rem);
+    grid-template-rows: 3rem;
+    list-style-type: none;
+  }
   li {
-    display: inline;
     color: $fontColor;
-    background-color: transparent;
+    background-color: $secondaryColor;
+  }
+  .lista {
+    grid-column: 3;
+  }
+  a {
+    padding: 0;
+    color: $fontColor;
+  }
+  a:hover {
+    color: coral;
+  }
+  span {
+    padding: 0;
+    color: $primaryColor;
   }
 }
 

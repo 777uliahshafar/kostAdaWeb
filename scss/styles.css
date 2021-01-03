@@ -253,22 +253,34 @@ figure {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr;
-    grid-template-rows: auto auto max-content;
-    grid-template-areas: '. links links .' '. sidebar article .' '. footer footer .';
+    grid-template-rows: max-content auto max-content;
+    grid-template-areas: 'links links links links' '. sidebar article .' '. footer footer .';
     justify-content: center;
     margin: 0 auto;
     padding: 2px;
     background-color: transparent; }
   nav {
-    display: grid;
-    grid-template-columns: repeat(12, 9rem);
     height: auto;
     background-color: #ac3b61;
     border-bottom: 4px solid #ecc7d3; }
+    nav ul {
+      display: grid;
+      grid-template-columns: repeat(12, 9rem);
+      grid-template-rows: 3rem;
+      list-style-type: none; }
     nav li {
-      display: inline;
       color: #302a2c;
-      background-color: transparent; }
+      background-color: #e0b4c3; }
+    nav .lista {
+      grid-column: 3; }
+    nav a {
+      padding: 0;
+      color: #302a2c; }
+    nav a:hover {
+      color: coral; }
+    nav span {
+      padding: 0;
+      color: #ac3b61; }
   main {
     background-color: #e6e4d9;
     border-right: 1px solid #746e4c;
